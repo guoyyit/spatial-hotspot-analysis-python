@@ -1,8 +1,3 @@
-from fastapi import FastAPI
+from spatial_hotspot.api import app
 
-app = FastAPI()
-
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+__all__ = ["app"]
