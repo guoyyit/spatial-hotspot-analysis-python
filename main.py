@@ -1,8 +1,5 @@
-from fastapi import FastAPI
+from app.main import create_app
 
-app = FastAPI()
+app = create_app()
 
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+__all__ = ["app"]
